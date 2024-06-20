@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ddd;
+    margin-top: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+nav {
+    background-color: #071055;
+    color: #fff;
+    width: 100%;
+    height: fit-content;
+
+}
+
+.Nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    flex-wrap: wrap !important;
+}
+
+.Nav-container .logo {
+    width: 100px;
+    height: 90%;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.Nav-container>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    li {
+        font-weight: 600;
+        cursor: pointer;
+        position: relative;
+    }
+}
+
+.drop-list {
+    transition: .2s linear all;
+    text-align: left;
+}
+
+@media(min-width:729px) {
+    .Nav-container .drop-list:hover .nested-links {
+        display: flex;
+
+    }
+}
+
+.nested-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 25px;
+    right: -50px;
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    padding-left: 10px;
+    border-radius: 10px;
+    z-index: 99;
+
+    li {
+        padding: 10px 5px;
+        font-size: 14px;
+        border-radius: 10px;
+        transition: .2s linear all;
+        color: #000;
+    }
+}
+
+.toggle {
+    display: none;
+}
+
+.nested-links li:hover {
+    background-color: #c1f3ff;
+    color: #000;
+}
+
+@media (max-width:768px) {
+    .toggle {
+        display: flex;
+        font-size: 42px;
+        cursor: pointer;
+    }
+
+    .Nav-container {
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+
+    .Nav-container .logo {
+        width: 70%;
+
+        img {
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+        }
+    }
+
+    .Nav-container>ul {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .Nav-container>ul.active {
+        display: flex;
+        width: 100%;
+    }
+
+    .nested-links {
+        position: relative;
+        display: none;
+    }
+
+    .nested-links.active {
+        display: flex;
+    }
+}

@@ -1,0 +1,65 @@
+.URL {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start !important;
+    padding: 45px;
+}
+
+.URL-container {
+    width: 40%;
+    padding: 20px;
+    border: 1px solid #1216f8 !important;
+    border-radius: 30px !important;
+    margin-left: 320px;
+    padding: 40px;
+}
+
+.URL-container h2 span {
+    color: red;
+}
+
+.URL-container input {
+    width: 250px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #180d0d;
+
+}
+
+.URL-container input:focus {
+    border: 1px solid #4285F6;
+}
+
+.URL-container .Selection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+}
+
+.URL-container .Selection p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.URL-container .Selection .Radio {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    width: 80%;
+}
+
+.URL-container .Selection .Radio input {
+    width: 15px;
+    height: 15px;
+}
+
+.URL-container .URL-Input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 5px;
+}

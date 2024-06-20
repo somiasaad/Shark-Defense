@@ -1,0 +1,91 @@
+.login {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+}
+
+
+.login-form {
+    width: 40%;
+
+}
+
+
+
+.Login-inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Login-inputs input {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    outline: none;
+    border: none;
+}
+
+.Login-inputs .Password-span {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding-right: 10px;
+
+    input {
+        width: 100%;
+        background-color: transparent;
+    }
+}
+
+/* .Image {
+    width: 50%;
+    margin: auto;
+
+    img {
+        width: 100%;
+    } */
+/* } */
+
+/* .Forms-col {
+    width: 50%;
+    margin: auto;
+} */
+
+@media (max-width:861px) {
+    .login {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .forms {
+        width: 100% !important;
+        margin: auto;
+    }
+
+    .login .Image {
+        width: 60%;
+        margin: auto;
+
+        img {
+            width: 100%;
+            margin: auto !important;
+            ;
+        }
+    }
+
+    .Forms-col {
+        width: 100% !important;
+    }
+}

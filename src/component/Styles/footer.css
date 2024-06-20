@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300&family=Protest+Strike&display=swap');
+
+footer {
+    width: 100%;
+    color: #fff;
+
+}
+
+.footer-container {
+    width: 90%;
+    min-height: fit-content;
+    margin: auto;
+    display: flex !important;
+    justify-content: space-between;
+    border-top: 1px solid #3B4B8A;
+    padding-top: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    width: 50% !important;
+    flex-direction: column;
+}
+
+.footer-link .link {
+    display: flex;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    gap: 10px;
+
+    width: 200px;
+    margin: auto;
+
+}
+
+.footer-link .link ul {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-link .link ul li {
+    transition: .2s linear all;
+    cursor: pointer;
+    width: fit-content;
+    font-weight: 600;
+}
+
+.footer-link .link ul li:hover:not(:last-child) {
+    color: #3B4B8A;
+    letter-spacing: 2px;
+}
+
+.footer-link .link:first-child {
+    border-right: 1px solid #ccc;
+    padding: 20px;
+
+}
+
+.footer-link .link h3 {
+    color: #5984c2;
+    font-family: "Protest Strike", sans-serif;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.footer-link ul li {
+    font-size: 16px;
+    color: #ccc;
+
+
+}
+
+.copy-right {
+    width: 50%;
+
+}
+
+@media(max-width:480px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-link {
+        width: 100%;
+        flex-direction: column !important;
+
+    }
+
+    .footer-link .link:first-child {
+        border-bottom: 1px solid #ccc;
+        border-right: none;
+    }
+}
+
+@media(min-width:728px) {
+    .footer-link {
+        flex-direction: row;
+    }
+
+    .copy-right {
+        width: 30%;
+        display: grid;
+        place-items: center;
+        font-weight: 600;
+    }
+}

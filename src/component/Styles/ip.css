@@ -1,0 +1,57 @@
+.domain {}
+
+.domain-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.domain-text h4 {
+    color: #4285F6;
+    font-weight: 400;
+}
+
+.domain-text ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+}
+
+.domain-text ul li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+
+    span {
+        display: flex;
+        width: 65%;
+        text-align: left;
+        font-size: 13px;
+    }
+
+    span.ip-title {
+        width: 35%;
+    }
+
+}
+
+.ip-title.country {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.domain-text p {
+    font-size: 12px;
+    width: 95% !important;
+    color: #777;
+    font-style: italic;
+    margin-top: 20px;
+
+    span {
+        color: #4285F6;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,90 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #091257;
+
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.bg {
+  background-color: #091257;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+
+a.active {
+  color: #73A8E6;
+}
+
+
+
+
+
+@media (min-width:1700px) {
+  .container {
+    max-width: 100%;
+    padding: 0 150px;
+  }
+}
+
+
+
+button#Login , button#Signup{
+  background-color: #0b5ed7;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px
+}
+#Swali{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#Send{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#Back{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+width: 70%;
+padding: 10px;
+gap: 10px;
+background: #1667B9;
+border-radius: 21px;
+flex: none;
+order: 1;
+flex-grow: 1;
+color:#fff;
+}

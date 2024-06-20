@@ -1,0 +1,113 @@
+.home {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    height: 62vh;
+}
+
+.text-container {
+    color: #fff;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    padding-bottom: 20px;
+    flex-direction: column;
+
+}
+
+.text-container h1 {
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.2;
+    width: 100%;
+    margin-left: 90px;
+    margin-top: 30px;
+}
+
+.text-container p {
+    line-height: 1.4;
+    color: #eee;
+    width: 80%;
+    margin-left: 90px;
+
+}
+
+.IMG-Home {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 75%;
+        height: 75%;
+        object-fit: cover;
+
+    }
+}
+
+.text-container input {
+    background-color: #1667b9;
+    width: 310px;
+    margin: auto;
+    border: 0;
+    color: #b9b9b9;
+    border-radius: 20px;
+    padding: 12px;
+    transition: .2s linear all;
+    border: none;
+    outline: none;
+}
+
+.text-container .btn {
+    background-color: #0294F4;
+    width: 180px;
+    border: 0;
+    margin: auto;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.text-container .btn:hover {
+    background-color: #31adff;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+
+    .home {
+        flex-direction: column-reverse;
+    }
+
+    .IMG-Home {
+        width: 90%;
+        height: 50%;
+        margin: auto;
+
+        img {
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .text-container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+.TestInput:valid ~ .TestSubmit{
+    opacity: 1;
+    cursor: pointer;
+}

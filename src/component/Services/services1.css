@@ -1,0 +1,77 @@
+.text-container-service {
+    min-height: fit-content;
+    /* padding: 20px; */
+    /* margin-top: 70px; */
+    background-color: #091257;
+    color: #FFF;
+}
+
+.text-container-service .text {
+    /* box-shadow: 0 8px 6px -6px rgba(252, 250, 250, 0.925); */
+    text-align: left;
+}
+
+
+.text p span {
+    color: rgb(68, 68, 223);
+}
+
+.text h2 {
+    font-size: xx-large;
+}
+
+.text-content {
+    background-color: #FFF !important;
+    /* height: 750px !important; */
+    color: #000;
+    width: 100%;
+    margin-top: 80px;
+    padding-top: 30px;
+    min-height: fit-content;
+}
+
+.text-content h2 {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.text-content img {
+    width: 320px;
+    height: 300px;
+
+    display: inline-block;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .text-content.service-img {
+    margin-top: 10px;
+} */
+
+.nested-links a {
+    color: #000;
+}
+
+.phishing-img .body-services {
+    height: 900px !important;
+}
+
+.Service-img {
+    margin-top: 20px !important;
+    width: 90% !important;
+    margin: auto;
+
+    img {
+        width: 30% !important;
+        /* height: 70%; */
+    }
+}
+
+.card-titles {
+    padding: 10px !important;
+    width: 47%;
+    text-align: center;
+}

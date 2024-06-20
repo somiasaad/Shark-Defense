@@ -1,0 +1,246 @@
+.signup {
+    display: flex;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    margin-right: 208px;
+}
+
+
+
+ul,
+a {
+    list-style: none;
+    text-decoration: none ;
+}
+
+
+
+
+.Form.forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: fit-content;
+    border-radius: 60px;
+    padding: 15px;
+    background-color: #B0D2F6;
+    min-height: 30%;
+    width: 100% !important;
+    margin: auto;
+    padding: 45px;
+
+    .Header {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .form-content {
+        width: min-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 25px;
+            outline: none;
+            border: none;
+            font-size: 16px;
+            color: rgb(59, 58, 58);
+            font-weight: 500;
+            }
+
+        ::placeholder {
+        }
+
+        .Name-Inputs {
+            display: flex;
+            gap: 10px;
+
+
+
+        }
+
+        span {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 25px;
+            padding: 0 15px 0 15px;
+        }
+    }
+}
+
+.Form button {
+    color: #fff;
+    background-color: #2D8DD3;
+    width: 70%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.End-Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+
+}
+
+.signup-form {
+    width: 60% !important;
+    height: 400px;
+    margin-left: 75px;
+}
+
+.Or-line {
+    width: 90%;
+    position: relative;
+}
+
+.Or-line::after {
+    content: "";
+    background-color: #222;
+    position: absolute;
+    top: 12px;
+    width: 100%;
+    height: 2px;
+}
+
+.Or-line p {
+    text-align: center;
+    background-color: #B0D2F6;
+    width: 50px;
+    margin: auto;
+    position: relative;
+    z-index: 9;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.IMGS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    gap: 10px;
+}
+
+.signup .Image {
+    width: 40%;
+    margin: auto;
+
+}
+
+.signup .Image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* .IMGS img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    cursor: pointer;
+} */
+
+
+
+/* @media (max-width: 600px) {
+     img {
+         width: 200px;
+     }
+
+     .form-content {
+         width: 200px;
+     }
+ } */
+
+@media (max-width:742px) {
+    .signup {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .Form {
+        width: 60% !important;
+        margin: auto;
+    }
+
+    .signup .Image {
+        width: 60%;
+        margin: auto;
+    }
+
+    input {
+        font-size: 14px !important;
+        font-weight: 600;
+    }
+}
+
+@media (min-width:743px) and (max-width:972px) {
+    .signup {
+        width: 100%;
+    }
+
+    .signup-form {
+        width: 100%;
+
+
+    }
+
+    .Form {
+        width: 80% !important;
+        margin: auto;
+    }
+
+    .signup .Image {
+        width: 60%;
+        margin: auto;
+    }
+
+    .signup .Image img {
+        width: 80%;
+    }
+
+    .IMGS img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        cursor: pointer;
+    }
+}
+
+@media(max-width:480px) {
+    .Form {
+        width: 90%;
+        margin: auto;
+    }
+
+    .Name-Inputs {
+        flex-direction: column;
+    }
+
+    .signup .Image {
+        margin: auto;
+        width: 80%;
+    }
+
+    .signup .Image img {
+        width: 100%;
+    }
+}

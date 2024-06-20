@@ -1,0 +1,43 @@
+.card-group img {
+    width: 40px;
+    height: 40px;
+}
+
+.card-group {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 7px;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+
+    border-radius: 4px;
+    padding: 10px;
+    flex: none !important;
+}
+
+
+.card-content {
+    margin-top: 10px;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin: 5px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #777;
+}
+
+@media (min-width:348px) and (max-width:728px) {
+    .card {
+        width: 400px !important;
+    }
+}

@@ -1,0 +1,19 @@
+.rules-content {
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.rules-content ul {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+    li {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

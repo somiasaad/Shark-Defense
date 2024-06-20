@@ -1,0 +1,38 @@
+.whois-content {
+    width: 60%;
+    padding: 20px;
+
+}
+
+.whois-content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.whois-content ul li {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    gap: 30px;
+}
+
+.whois-content ul li span:nth-child(2) {
+    display: flex;
+    justify-content: flex-start;
+    width: 60% !important;
+    color: #888;
+}
+
+.whois-content ul li ul {
+    gap: 20px;
+
+}
+
+.whois-content ul li ul li {
+    color: #888 !important;
+}
+
+.whois-content ul li ul:first-child {
+    margin-top: 10px;
+}
