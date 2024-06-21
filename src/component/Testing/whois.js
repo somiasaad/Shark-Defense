@@ -3,7 +3,6 @@ import '../Styles/who.css';
 import axios from 'axios';
 import Spinner from './../Spinner';
 import apiUrl from '../APIURL';
-import { Token } from '../Toke';
 
 export default function Whois() {
     const [Data, setData] = useState();
@@ -20,7 +19,6 @@ export default function Whois() {
                     headers: {
                         'Content-Type': 'application/json',
                         'accept': 'application/json',
-                        Authorization: `Bearer ${Token}`,
                     }
                 }
             );

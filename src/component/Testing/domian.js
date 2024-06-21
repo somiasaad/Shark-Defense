@@ -4,7 +4,6 @@ import eg from '../../imgs/egypt.jpeg';
 import axios from 'axios';
 import Spinner from './../Spinner';
 import apiUrl from '../APIURL';
-import { Token } from '../Toke';
 
 export default function Domain() {
     const [IPInfo, setIPInfo] = useState();
@@ -20,7 +19,6 @@ export default function Domain() {
                     headers: {
                         'Content-Type': 'application/json',
                         'accept': 'application/json',
-                        Authorization: `Bearer ${Token}`,
                     }
                 }
             );

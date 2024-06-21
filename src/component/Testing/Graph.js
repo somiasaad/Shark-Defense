@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import service6 from '../../imgs/graph (2).jpeg'
 import axios from 'axios';
-import { Token } from '../../Toke';
 import parse from 'html-react-parser';
 import apiUrl from './../Services/APIURL';
 export default function Graph() {
@@ -17,7 +16,6 @@ export default function Graph() {
                         headers: {
                             'Content-Type': 'application/json',
                             'accept': 'application/json',
-                            Authorization: `Bearer ${Token}`,
                         }
                     }
                 );

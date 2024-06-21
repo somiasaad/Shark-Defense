@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import axios from 'axios';
 import Spinner from './../Spinner';
-import { Token } from '../Toke';
 import apiUrl from '../APIURL';
 
 export default function Screen() {
@@ -18,7 +17,6 @@ export default function Screen() {
                     headers: {
                         'Content-Type': 'application/json',
                         'accept': 'application/json',
-                        Authorization: `Bearer ${Token}`,
                     }
                 }
             );
@@ -29,8 +27,8 @@ export default function Screen() {
             setLoading(false);
 
         } catch (error) {
-            console.error('Error fetching data:', error);
             setLoading(false);
+
         }
     }, [url]);
 
@@ -41,7 +39,7 @@ export default function Screen() {
             const parsedResult = JSON.parse(storedResult);
             if (parsedResult.url === url) {
                 setScreen(parsedResult.data);
-                return; // Exit early if the URL has not changed
+                return; // Stop the effect if the stored result matches the current URL
             }
         }
 
