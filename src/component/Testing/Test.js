@@ -25,6 +25,8 @@ export default function Test() {
     const [Loading, setLoading] = useState(false)
     const Navigate = useNavigate()
     useEffect(() => {
+        let isMounted = true;
+    
         const Fetch = async () => {
             setLoading(true)
             try {
@@ -36,21 +38,28 @@ export default function Test() {
                         headers: {
                             'Content-Type': 'application/json',
                             'accept': 'application/json',
-                            
                         }
                     }
                 );
-
-                console.log(res)
-                setData(res.data)
-                setLoading(false)
+    
+                if (isMounted) {
+                    console.log(res)
+                    setData(res.data)
+                    setLoading(false)
+                }
             } catch (error) {
-                setLoading(false)
-                console.log(error)
-                setError("Error while fetching data please try again")
+                if (isMounted) {
+                    setLoading(false)
+                    console.log(error)
+                    setError("Error while fetching data please try again")
+                }
             }
         };
         Fetch();
+    
+        return () => {
+            isMounted = false;
+        };
     }, []);
 
 
@@ -132,7 +141,7 @@ export default function Test() {
                         text-red-400 w-[50%]  text-centerfont-semibold  text-[26px]'>{Error}</p> 
                         <Button
                         onClick={() => Navigate("/")}
-                        className='flex justify-center p-2  text-white bg-blue-500 rounded'>Back to Home</Button>
+                        className='flex justify-center p-2 text-white bg-blue-500 rounded'>Back to Home</Button>
                     </div>
 
                 

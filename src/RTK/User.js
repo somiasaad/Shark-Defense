@@ -1,10 +1,13 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import {  useNavigate } from "react-router-dom";
+import apiUrl from '../component/APIURL';
+
 export const login = createAsyncThunk(
   'user/login',
+
   async ({ email, password }, thunkAPI) => {
     try {
-      const response = await fetch("http://172.208.112.141:8000/api/v1/user/login/", {
+      const response = await fetch(`${apiUrl}/user/login/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
